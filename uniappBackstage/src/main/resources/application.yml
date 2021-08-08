@@ -1,0 +1,15 @@
+server:
+  port: 8086
+spring:
+  #通用的数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dtcmsdb4?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
